@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VRMALL</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css">
+
+  <link rel="stylesheet" href="style1.css">
+  <style>
+    .sidebar {
+      height: 100%;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="" style="background-color:rgb(239, 235, 235); margin:auto;">
+      <div class="sidebar">
+       <div class="logo">
+            <img src="/assets/img/logo.png" alt="Logo" width="100">
+        </div>
+        <div class="menu">
+          <ul>
+              <li>
+                <a href="">
+                  <i class="fas fa-home before"></i>                                  
+                  Trang chủ
+              
+                </a>
+                
+              </li>
+              <li>
+                <a href="">
+                  <i class="far fa-chart-bar before"></i>                  
+                  Thống kê
+                </a>
+                
+                  <i class="fas fa-angle-down"></i>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fas fa-store-alt before"></i>                  
+                Mẫu cửa hàng
+                </a>
+                
+
+              </li>
+              <li>
+                <a href="">
+                  <i class="fas fa-store before"></i>                  
+                Cửa hàng
+                </a>
+                
+                <i class="fas fa-angle-down"></i>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fas fa-tv before"></i>
+                  Đa phương tiện
+                </a>
+                
+                  <i class="fas fa-angle-down"></i>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fas fa-file-import before"></i>
+                  Xuất bản
+                </a>
+                
+                  <i class="fas fa-angle-down"></i>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fas fa-database before"></i>
+                  Dữ liệu người dùng
+                </a>
+                
+                  <i class="fas fa-angle-down"></i>
+              </li>
+          </ul>
+      </div>
+      <!-- <i class="fas fa-door-open"></i> -->
+
+      </div>
+      <div class="content">
+        <div class="content-header">
+          <div class="header"> 
+            <div class="actions">
+                <i class="fas fa-credit-card"></i>
+                GÓI TÀI KHOẢN
+            </div>
+            <div class="actions">
+              <button class="create-store btn btn-primary">                
+                <i class="fas fa-plus"></i>
+                Tạo cửa hàng</button>
+              <div class="account">
+                <img src="/assets/img/pic1.jpg"  class="user-avatar" >
+                vr360admin
+              </div>
+            </div>
+          </div>
+
+      </div>
+      <div class="main">
+        <i class="fas fa-door-open sidebar-toggle" onclick="toggleSidebar()" ></i>
+        <h1>VUI LÒNG CHỌN GÓI PHÙ HỢP VỚI BẠN</h1>
+          <div class="tab_container">
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1" class="tab tab1" ><span>Gói 12 tháng
+              <img src="'/assets/img/20%.png" alt="">
+            </span></label>
+            <img src="" alt="">
+
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2" class="tab tab2"><i class="fa fa-pencil-square-o"></i><span>Gói 1 tháng</span></label>
+      
+            <section id="content1" class="tab-content">
+                <div class="row packages">
+            <div class="col-lg-4 col-sm-12 col-md-12 " style="margin-bottom:50px;">
+              <div class="box">
+                <div class="box-cover">
+                  <div class="package">Gói</div>
+                <div class="package-type">Basic</div>
+                
+                <div class="price style=" style="color:#913cfe">Miễn phí</div>
+                <div class="box-content">
+                  <p>Không gian trưng bày</p>
+                  <ul>
+                      <li>Tạo được một cửa hàng</li>
+                      <li>Sử dụng mẫu cửa hàng trưng bày được 6 đến 9 sản phẩm</li>
+                      <li>Đặt cửa hàng vào vị trí vrMall</li>
+                  </ul>
+                  <p>Tính năng</p>
+                  <ul>
+                      <li>Bộ tính năng cơ bản của vrStore</li>
+                  </ul>
+                  <p>Tính năng</p>
+                  <ul>
+                      <li>Không quá 50M dữ liệu (video, hình ảnh, tệp, âm thanh)</li>
+                  </ul>
+                </div>
+                <div class="button-wrapper">
+                  <a href="buy.html" onclick="Buy('Basic',0, '(Basic 12 tháng)',0)" >
+                    <button class="buy-button btn1">Mua ngay</button>
+                  </a>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-12"style="margin-bottom:50px;">
+              <div class="box">
+                <div class="box-cover">
+                  <div class="package">Gói</div>
+                  <div class="package-type">Standard</div>
+                  <div class="price-cover">
+                    <div class="unit pr2">đ/tháng</div>
+                    <div class="price pr2">239.000</div>
+                  </div>                 
+                  <div class="price-">(2.868.000đ/năm)</div>
+                  <div class="box-content">
+                    <p>Không gian trưng bày</p>
+                    <ul>
+                        <li>Tạo được 1 cửa hàng</li>
+                        <li>Sử dụng mẫu cửa hàng trưng bày được lên đến 14 sản phẩm/mỗi cửa hàng</li>
+                        <li>Đặt cửa hàng vào vị trí vrMall</li>
+                        <li>Đạt cửa hàng vào vị trí nổi bật trong vrMall</li>
+                        <li>Đặt cửa vào khu vực VIP trong vrMall</li>
+                    </ul>
+                    <p>Tính năng</p>
+                    <ul>
+                        <li>Bộ tính năng cơ bản của vrStore</li>
+                        <li>Chức năng Video call giữa khách tham quan với chủ cửa hàng</li>
+                    </ul>
+                    <p>Tính năng</p>
+                    <ul>
+                        <li>Không quá 40M dữ liệu (video, hình ảnh, tệp, âm thanh)</li>
+                    </ul>
+                  </div>
+                  <a href="buy.html" onclick="Buy('Standard','2.868.000','(Standard 12 tháng)','2.868.000')">
+                  <div class="button-wrapper">
+                    <button class="buy-button btn2">Mua ngay</button>
+                  </div>
+                  </a>
+
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-12"style="margin-bottom:50px;">
+              <div class="box">
+                <div class="box-cover">
+                    <div class="package">Gói</div>
+                    <div class="package-type">Premium</div>
+                    <div class="price-cover">
+                      <div class="unit pr3">đ/tháng</div>
+                    <div class="price pr3">639.000</div>
+                    </div>
+                    
+                    <div class="price-">(7.668.000đ/năm)</div>
+  
+                    <div class="box-content">
+                      <p>Không gian trưng bày</p>
+                      <ul>
+                          <li>Tạo được 2 cửa hàng</li>
+                          <li>Sử dụng mẫu cửa hàng trưng bày được đến 25 sản phẩm/mỗi cửa hàng</li>
+                          <li>Cho phép tự tạo không gian cửa hàng của riêng mình (phù hợp với khách mong muốn có phòng cách cửa hàng riêng, không ràng buộc số lượng sản phẩm trưng bày theo mẫu của hệ thống, KH tự thiết kế không gian và tải lên)</li>
+                          <li>Đặt cửa hàng vào vị trí vrMall</li>
+                      </ul>
+                      <p>Tính năng</p>
+                      <ul>
+                          <li>Bộ tính năng cơ bản của vrStore</li>
+                          <li>Chức năng Video call giữa khách tham quan với chủ cửa hàng</li>
+                          <li>Tạo bài trình bày tự động</li>
+                          <li>Xuất bản trang danh sách cửa hàng</li>
+                          <li>Xuất bản trang danh sách cửa hàng góc nhìn bản đồ quả địa cầu</li>
+                      </ul>
+                      <p>Tính năng</p>
+                      <ul>
+                          <li>Không quá 40M dữ liệu (video, hình ảnh, tệp, âm thanh)</li>
+                      </ul>
+                    </div>
+                    <a href="buy.html" onclick="Buy('Premium','7.668.000','(Premium 12 tháng)','7.668.000')">
+                      <div class="button-wrapper" >
+                      <button class="buy-button btn3">Mua ngay</button>
+                    </div>
+                    </a>
+                    
+                    
+                </div>
+  
+  
+                </div>
+  
+            </div>
+          </div>
+  
+            <button type="button" class="btn btn-danger">Hủy đăng ký gói hiện tại</button>
+            <p class="cp">Coppyright © vrMall - Vesion 0.1</p>
+            </section>
+      
+            <section id="content2" class="tab-content">
+                <div class="row packages">
+            <div class="col-lg-4 col-sm-12 col-md-12 " style="margin-bottom:50px;">
+              <div class="box">
+                <div class="box-cover">
+                  <div class="package">Gói</div>
+                <div class="package-type">Basic</div>
+                
+                <div class="price style=" style="color:#913cfe">Miễn phí</div>
+                <div class="box-content">
+                  <p>Không gian trưng bày</p>
+                  <ul>
+                      <li>Tạo được một cửa hàng</li>
+                      <li>Sử dụng mẫu cửa hàng trưng bày được 6 đến 9 sản phẩm</li>
+                      <li>Đặt cửa hàng vào vị trí vrMall</li>
+                  </ul>
+                  <p>Tính năng</p>
+                  <ul>
+                      <li>Bộ tính năng cơ bản của vrStore</li>
+                  </ul>
+                  <p>Tính năng</p>
+                  <ul>
+                      <li>Không quá 50M dữ liệu (video, hình ảnh, tệp, âm thanh)e</li>
+                  </ul>
+                </div>
+                <div class="button-wrapper">
+                  <a href="buy.html" onclick="Buy('Basic',0,'(Basic 1 tháng)',0)">
+                    <button class="buy-button btn1">Mua ngay</button>
+                  </a>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-12"style="margin-bottom:50px;">
+              <div class="box">
+                <div class="box-cover">
+                  <div class="package">Gói</div>
+                  <div class="package-type">Standard</div>
+                  <div class="price-cover">
+                    <div class="unit pr2">đ/tháng</div>
+                    <div class="price pr2">299.000</div>
+                  </div>
+                  
+                  <div class="price-">(3.588.000đ/năm)</div>
+                  <div class="box-content">
+                    <p>Không gian trưng bày</p>
+                    <ul>
+                        <li>Tạo được 1 cửa hàng</li>
+                        <li>Sử dụng mẫu cửa hàng trưng bày được lên đến 14 sản phẩm/mỗi cửa hàng</li>
+                        <li>Đặt cửa hàng vào vị trí vrMall</li>
+                        <li>Đạt cửa hàng vào vị trí nổi bật trong vrMall</li>
+                        <li>Đặt cửa vào khu vực VIP trong vrMall</li>
+                    </ul>
+                    <p>Tính năng</p>
+                    <ul>
+                        <li>Bộ tính năng cơ bản của vrStore</li>
+                        <li>Chức năng Video call giữa khách tham quan với chủ cửa hàng</li>
+                    </ul>
+                    <p>Tính năng</p>
+                    <ul>
+                        <li>Không quá 40M dữ liệu (video, hình ảnh, tệp, âm thanh)</li>
+                    </ul>
+                  </div>
+                  <a href="buy.html" onclick="Buy('Standard','3.588.000','(Standard 1 tháng)','3.588.000')">
+                     <div class="button-wrapper">
+                    <button class="buy-button btn2">Mua ngay</button>
+                  </div>
+                  </a>
+                </div> 
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-12"style="margin-bottom:50px;">
+              <div class="box">
+                <div class="box-cover">
+                    <div class="package">Gói</div>
+                    <div class="package-type">Premium</div>
+                    <div class="price-cover">
+                      <div class="unit pr3">đ/tháng</div>
+                    <div class="price pr3">699.000</div>
+                    </div>
+                    
+                    <div class="price-">(9.588.000đ/năm)</div>
+  
+                    <div class="box-content">
+                      <p>Không gian trưng bày</p>
+                      <ul>
+                          <li>Tạo được 2 cửa hàng</li>
+                          <li>Sử dụng mẫu cửa hàng trưng bày được đến 25 sản phẩm/mỗi cửa hàng</li>
+                          <li>Cho phép tự tạo không gian cửa hàng của riêng mình (phù hợp với khách mong muốn có phòng cách cửa hàng riêng, không ràng buộc số lượng sản phẩm trưng bày theo mẫu của hệ thống, KH tự thiết kế không gian và tải lên)</li>
+                          <li>Đặt cửa hàng vào vị trí vrMall</li>
+                      </ul>
+                      <p>Tính năng</p>
+                      <ul>
+                          <li>Bộ tính năng cơ bản của vrStore</li>
+                          <li>Chức năng Video call giữa khách tham quan với chủ cửa hàng</li>
+                          <li>Tạo bài trình bày tự động</li>
+                          <li>Xuất bản trang danh sách cửa hàng</li>
+                          <li>Xuất bản trang danh sách cửa hàng góc nhìn bản đồ quả địa cầu</li>
+                      </ul>
+                      <p>Tính năng</p>
+                      <ul>
+                          <li>Không quá 40M dữ liệu (video, hình ảnh, tệp, âm thanh)</li>
+                      </ul>
+                    </div>
+                    <a href="buy.html" onclick="Buy('Premium','9.558.000','(Premium 1 tháng)','9.558.000')">
+                      <div class="button-wrapper">
+                      <button class="buy-button btn3">Mua ngay</button>
+                    </div>
+                    </a>                    
+                </div>
+                </div>
+            </div>
+          </div>
+            <button type="button" class="btn btn-danger">Hủy đăng ký gói hiện tại</button>
+            <p class="cp">Coppyright © vrMall - Vesion 0.1</p>
+            </section>
+          </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+  <script>
+
+
+    document.querySelector('.btn-danger').addEventListener('click',(event)=>{
+      event.preventDefault();
+      Swal.fire({
+        title: 'Hủy vrStore Standard?',
+        text: "Bạn có chắc chắn muốn hủy gói vrStore không?",
+        showCancelButton: true,
+        cancelButtonText:'Hủy bỏ',
+        confirmButtonText: 'Đúng',
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            title:'Bạn đã hủy gói vrStore Standard',
+            text:'Cảm ơn bạn đã sử dụng vr Standard',
+            confirmButtonText:'Quay lại trang chủ',
+          }
+          )
+        }
+      })
+    })
+ </script>
+ <script src="script.js"></script>
+</body>
+</html>

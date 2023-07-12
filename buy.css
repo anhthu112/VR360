@@ -1,0 +1,177 @@
+.package-info {
+    /* display: flex; */
+    background-color: #ffff;
+    border-radius: 8px;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+}
+.main{
+    height:100%;
+}
+.package{
+  display: flex;
+  justify-content: center;
+}
+.package-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1.5px solid #dcdbdb;
+  margin-bottom:10px;
+
+}
+.line{
+  height:1px;
+  width:100%;
+  position:relative;
+  top:30px;
+  background-color:black !important;
+
+}
+h2{
+  color:#000000;
+  font-size:15px;
+}
+p{
+  color:#181717;
+  font-size:12px;
+  font-weight:500;
+}
+.package-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1.5px solid #dcdbdb;
+
+}
+.note ul li{
+  font-size:12px;
+  margin-left:20px;
+  font-weight:400;
+}
+
+.radio-label {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.radio-label:hover {
+  background-color: #f2f2f2;
+}
+#price{
+  background: linear-gradient(90deg, #1877f2, #913cfe );
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent;
+  -webkit-text-fill-color: transparent; 
+  font-size: 20px;
+}
+.note{
+  font-size:12px;
+  font-weight:400;
+  color:#696868;
+}
+.btn-{
+  width: 100%;
+  height:40px;
+  font-size:12px;
+  border:none;
+  border-radius: 5px;
+  padding:5px 0;
+  background: -webkit-linear-gradient(0deg, #1877f2, #913cfe );
+  color:#fff;
+}
+
+.banking-main{
+  background-color: #f8f9fc;
+  border-radius: 8px;
+
+}
+.banking-info{
+  display: flex;
+  margin-left:20px;
+  text-align: baseline;
+
+
+}
+.btn-warning{
+  color:#ffff;
+  font-size:7px;
+  padding:0 8px;
+  margin-bottom:7px;
+  /* display:none; */
+
+}
+.banking{
+  margin-top:20px;
+}
+.banking-main-info{
+  padding:15px;
+  background-color:#f8f9fc;
+  border-radius :10px;
+ color:#b8b3b3;
+ display: flex;
+ text-align: baseline;
+ justify-content: space-between;
+}
+.banking-main-info p{
+  color: #000;
+  margin-right: 8px;
+  font-size: 10px;
+  font-weight: 500;
+
+}
+.qr-img{
+  width:100px;
+  height:auto; 
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+.banking{
+  /* display:none; */
+}
+.bank{
+  width:120px;
+  height:auto;
+  padding:15px;
+}
+p{
+  margin-bottom:0.5rem;
+}
+.option1{
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size:10px;
+}
+.py{
+  height:25px;
+  width:auto;
+  margin-left:8px;
+}
+#problem{
+  color:#000000;
+  font-size:10px;
+  text-decoration: underline;
+}
+.swal2-popup{
+  width:400px;
+}
+#swal2-html-container{
+  font-size:15px;
+  color:#5f5f5f;
+}
+.swal2-confirm {
+  padding-left:100px;
+  padding-right:100px;
+  background: -webkit-linear-gradient(0deg, #1877f2, #b3119a) !important;
+
+}
+div:where(.swal2-container) h2:where(.swal2-title) {
+  font-size:20px !important; 
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VRMALL</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="buy.css">
+  <style>
+    .sidebar {
+      height: 100%;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="" style="background-color:rgb(239, 235, 235); margin:auto;">
+      <div class="sidebar">
+       <div class="logo">
+            <img src="/assets/img/logo.png" alt="Logo" width="100">
+        </div>
+        <div class="menu">
+          <ul>
+              <li>
+                <a href="">
+                  <i class="fas fa-home before"></i>                                  
+                  Trang chủ
+              
+                </a>
+                
+              </li>
+              <li>
+                <a href="">
+                  <i class="far fa-chart-bar before"></i>                  
+                  Thống kê
+                </a>
+                
+                  <i class="fas fa-angle-down"></i>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fas fa-store-alt before"></i>                  
+                Mẫu cửa hàng
+                </a>
+                
+
+              </li>
+              <li>
+                <a href="">
+                  <i class="fas fa-store before"></i>                  
+                Cửa hàng
+                </a>
+                
+                <i class="fas fa-angle-down"></i>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fas fa-tv before"></i>
+                  Đa phương tiện
+                </a>
+                
+                  <i class="fas fa-angle-down"></i>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fas fa-file-import before"></i>
+                  Xuất bản
+                </a>
+                
+                  <i class="fas fa-angle-down"></i>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fas fa-database before"></i>
+                  Dữ liệu người dùng
+                </a>
+                
+                  <i class="fas fa-angle-down"></i>
+              </li>
+          </ul>
+      </div>
+     </div>
+      <div class="content">
+        <div class="content-header">
+          <div class="header"> 
+
+            <div class="actions">
+                <i class="fas fa-credit-card"></i>
+                GÓI TÀI KHOẢN
+            </div>
+            <div class="actions">
+              <button class="create-store btn btn-primary">                <i class="fas fa-plus"></i>
+                Tạo cửa hàng</button>
+              <div class="account">
+                <img src="/assets/img/pic1.jpg"  class="user-avatar" >
+                vr360admin
+              </div>
+            </div>
+          </div>
+
+      </div>
+      <div class="main">
+        <div class="row package">
+            <div class="col-lg-4">
+                <div class="package-info">
+                  <div class="package-header">
+                    <h2 id="packageType"></h2>
+                    <a href="">
+                      <p style="text-decoration: underline; color:#b0afaf">Thay đổi gói</p>
+
+                    </a>
+                  </div>
+                  <div class="package-main" style="border:none">
+                    <div class="column">
+                      <p>Gói</p>
+                      <p>Ngày bắt đầu</p>
+                       <p>Ngày thanh toán</p>   
+                    </div>
+                    <div class="column" style="text-align: right;">
+                      <p id="packagetype"></p>
+                      <p>25/3/2023</p>
+                      <p>24/3/2023</p>
+                    </div>  
+                  </div>
+                  <div class="note">
+                    <ul>
+                    <li>Ngày thanh toán tiếp theo là ngày 24/3/2023</li>
+                    <li>Hủy bất cứ lúc nào</li>
+                  </ul>
+                  </div>
+
+                </div> 
+                <div class="package-info">
+                  <div class="package-header" style="border-bottom:none">
+                    <h2>HỌ VÀ TÊN</h2>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Nhập tên của bạn" aria-label="Username" aria-describedby="basic-addon1">
+                  <div class="payment">
+                    <div class="option1 o1"><input type="radio" name="option" value="option1" id="option1">
+                           <img class='py'src="/assets/img/py.png" alt="">
+                           </div>              
+                    <div class="option1 o2"><input type="radio" name="option" value="option2" id="option2">      <span>Thanh toán bằng hình thức chuyển khoản</span>   </div>
+                </div>
+                <p class="note">Chúng tôi sẽ sử dụng thông tin này để phát hành hóa đơn đầu tiên. Bạn có thể cập nhật chi tiết cho các hóa đơn trong tương lai từ hồ sơ tài khoản của mình.</p>
+                <a id="problem" href="">Có vấn đề với thanh toán của bạn</a>
+                </div>  
+            </div> 
+            <div class="col-lg-4">
+                <div class="package-info">
+
+                    <div class="package-header">
+                      <h2>Hóa đơn</h2>
+                      <p style="color:#ffff">Thay đổi gói</p>
+                    </div>
+                    <div class="package-main">
+                      <div class="column">
+                        <p>Giá</p>
+                        <p>Thuế</p>
+                      </div>
+                      <div class="column" style="text-align: right;">
+                        <p id="price1"></p>
+                        <p>0</p>
+                      </div> 
+                    </div>
+                    <div class="package-main" style="border:none;margin-top:20px;">
+                      <div class="column">
+                        <h2>Tổng cộng</h2>
+                      </div>
+                      <div class="column">
+                        <h2 id="price"></h2>
+                      </div>
+                    </div> 
+                    <p class="note">Chúng tôi sẽ thông báo bạn trước khi gói này hết hạn. Bạn có thể hủy đăng ký của mình bất kỳ lúc nào trong phần gói tài khoản của tôi trong hồ sơ của bạn. Bằng cách nhấp vào "Xác nhận và thanh toán", bạn đồng ý với điều khoản và điều kiện.</p>
+                    <button class="btn- confirm">XÁC NHẬN THANH TOÁN</button>
+                    <div class="banking" style="display:none">
+                      <h2>Thông tin chuyển khoản</h2>
+                      <div class="banking-main">
+                        <img class="bank" src="/assets/img/vcb.png" alt="">
+                        <div class="banking-main-info">
+                        <div class="column">
+                          <p>Số tài khoản</p>
+                          <p>Chủ tài khoản</p>
+                          <p>Nội dung chuyển khoản</p>
+                          <p>Chi nhánh</p>
+                        </div>
+                        <div class="column" style="text-align: right;">
+                          <div class="banking-info">
+                            <div class="column">
+                              <p>0251002755221</p>
+                              <p>TRỊNH CÔNG QUANG</p>
+                              <p>VRPREMIUM1234598</p>
+                              <p>Vietcombank(VCB)-chi nhánh Đà Nẵng</p>
+                            </div>
+                            <div class="column" style="display: grid;">
+                              <button type="button" class="btn btn-warning">
+                                <i class="fas fa-copy"></i>
+                                Copy</button>
+                                <button type="button" class="btn btn-warning">
+                                  <i class="fas fa-copy"></i>
+                                  Copy</button>
+                                  <button type="button" class="btn btn-warning">
+                                    <i class="fas fa-copy"></i>
+                                    Copy</button>
+                                    <div>.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <img class="qr-img" src="/assets/img/qr.png" alt="">
+                      <div class="note">
+                        <ul >
+                          <li>Một số ngân hàng chưa hỗ trợ quét mã QR</li>
+                          <li>Quý khách vui lòng đối chiếu thông tin trước khi chuyển khoản</li>
+                      </ul>
+                      </div>
+                        
+                 
+                      <button class="btn- confirm1">XÁC NHẬN ĐƠN HÀNG</button>
+
+
+                    </div>
+
+            </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+  <script>
+    var option1=document.querySelector('.o1');
+    var option2=document.querySelector('.o2');
+    var banking=document.querySelector('.banking');
+    var confirm =document.querySelector('.confirm');
+    option1.addEventListener('change', function(){
+      if (option1.checked){
+        banking.style.display='block';
+        confirm.style.display='none';
+      }
+      else {banking.style.display='none';
+      confirm.style.display='block';
+    }    
+    }) ;
+    option2.addEventListener('change', function(){
+      if (option1.checked){
+        banking.style.display='none';
+        confirm.style.display='block';
+
+      }
+      else {banking.style.display='block';
+            confirm.style.display='none';
+
+    }
+
+    }) ;
+      
+
+    document.querySelector('.confirm1').addEventListener('click',(event)=>{
+      Swal.fire({
+          title: 'Bạn đã đặt hàng thành công',
+          html:
+            'Đơn hàng của bạn đang được thực hiện. Một biên nhận cho đơn hàng 0123456789 sẽ được gửi tới email của bạn khi quá trình thanh toán hoàn tất.',
+          showCloseButton: true,
+          focusConfirm: false,
+          confirmButtonText:
+            '<a href="index.html" style="color:#ffff;">Quay lại trang chủ</a>',        
+        })
+    }) 
+
+
+    $('#price').html(localStorage.getItem('price'));
+    $('#price1').html(localStorage.getItem('price1'));
+    $('#packageType').html(localStorage.getItem('packageType'))
+    $('#packagetype').html(localStorage.getItem('packagetype'))
+    var selected=document.querySelector('.package-header')
+    console.log(selected.style);
+  </script>  
+</body>
+</html>

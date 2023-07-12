@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-weight: lighter;
+    left: 0;
+    right: 0;
+    scroll-behavior: smooth;
+    height:100%;
+}
+body{
+  /* width:80%; */
+}
+.sidebar {
+    background-color: #292a31;
+    transition: right 0.3s ease;
+    box-sizing: border-box;
+    width:200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    position:fixed;
+    z-index:999;
+    padding:10px;
+  }
+  .menu ul li a{
+    color:#fff;
+    font-size:11px;
+  }
+  .content {
+    /* padding: 20px; */
+    background-color: rgb(239, 235, 235);
+    padding:0 !important;
+  }
+  .content-header {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+    
+  .fa-credit-card{
+    padding: 10px;
+  }
+  .actions{
+    font-size:15px;
+    font-weight: 400;
+  }
+  .logo {
+    display:flex;
+  }
+  .fa-door-open{
+    position: absolute;
+    RIGHT: 0;
+    margin-right: 15px;
+    margin-bottom:15px;
+    bottom:0;
+    color: #fff;
+    font-size:20px;
+    display:none;
+    
+  }
+  img{
+    margin:auto;
+  }
+  .sale{
+    width:20px;
+    background-image: url('/assets/img/20%.png');
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  .create-store {
+    margin-right: 10px;
+  }
+  .account {
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  .user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  .create-store{
+    background: -webkit-linear-gradient(0deg,#4259f3, #b3119a );
+    border:none;
+  }
+  .main {
+    padding: 10px;
+    background-color: #ebecf0;
+  }
+  .main h1{
+    text-align: center;
+    font-size:18px;
+    margin:auto;
+  }
+  .box {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    
+    flex-direction: column;
+    position: relative;
+    height:100%;
+  }
+  .box-content p{
+    margin-bottom:0;
+    margin-top: 15px;
+  }
+
+  .option {
+    display: inline-block;
+    padding: 5px 0;
+    cursor: pointer;
+    /* margin-right: 10px; */
+    
+    text-align: center;
+    background-color: #fff;
+    color:black;
+    width: 30%;
+  }
+
+  .options{
+    text-align: center;
+    padding: 15px;
+
+  }
+  .o1{
+    border-radius: 10px 0 0 10px;
+  }
+  .o2{
+    border-radius: 0 10px 10px 0;
+  }
+  .option.active {
+    background: -webkit-linear-gradient(0deg,#4259f3, #b3119a );
+    color: #fff;
+  }
+  .package{
+    font-size: 18px;
+    color: #696868;
+    font-weight: 600;
+  }
+  .price{
+    text-align: center;
+    font-size: 40px;
+    font-weight:600;
+  }
+  .price-{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 400;
+    color:#adadad;
+
+  }
+  .pr2{
+    color:#1877f2;
+  }
+  .pr3{
+    background: linear-gradient(90deg, #1877f2, #913cfe );
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    -webkit-text-fill-color: transparent; 
+  }
+  .box-content ul li{
+    font-size: 13px;
+    margin-left:10px;
+    color:#777777;
+    
+  }
+  .content{
+    margin-left:180px;
+  }
+  .box-content{
+    margin-top:40px;
+  }
+  .box-content p{
+    color:#5f5f5f;
+    font-weight:400;
+  }
+  .package-type{
+      color:#000;
+      font-weight:600;
+      font-size: larger;
+  }
+  .packages{
+    width:80%;;
+    margin:auto;
+  }
+.unit{
+      /* float: right; */
+      position: absolute;
+      /* margin-bottom: 8px; */
+      font-size: 20px;
+      /* right: 0; */
+      font-weight: 600;
+      margin-left: 160px;
+      margin-top: -19px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color:#ffff;
+    font-size: 13px;
+}
+.fa-angle-down{
+  position: absolute;
+  RIGHT: 0;
+  margin-right:15px;
+}
+.before{
+  padding-right:10px;
+}
+.logo{
+  padding: 50px 0;
+}
+.buy-button {
+  /* CSS cho button mua hàng */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border:none;
+  border-radius: 5px;
+  padding:5px 0;
+
+}
+.price-cover{
+  display:flex;
+  justify-content: center;
+}
+.btn1 {
+  background-color: #e9d8ff;
+  color:#913cfe;
+}
+.btn2 {
+  background-color: #d1e4fc;
+  color:#1877f2;
+}
+.btn3{
+  background: -webkit-linear-gradient(0deg, #1877f2, #913cfe );
+  color:#fff;
+  
+}
+.fa-bars{
+  /* display:none; */
+  font-size: 24px;
+}
+.box{
+  padding:0;
+  padding-bottom:10px;
+  margin-top: 20px;;
+}
+.box-cover{
+  padding:20px;
+}
+.button-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  background-color: #f8f9fa;
+  /* margin: auto; */
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+}
+.container-fluid{
+  padding:0;
+}
+.btn-danger{
+  padding:5px 30px;
+  font-size: 11px;
+  margin-bottom:10px;
+  left: 50%;
+  position:relative;
+  transform: translateX(-50%);
+  font-weight: 500;
+  font-size: 13px;
+  align-items: center;
+
+}
+
+.cp{
+  font-size: 11px;
+    text-align: center;
+    color: #898a8b;
+    font-weight: 500;
+}
+@media (max-width:678px) {
+  .sidebar{
+    display:none;
+    z-index: 10000;
+    width:40%;
+    animation: modalFadein 0.3s ease;
+
+  }
+  .content{
+    margin-left: 0;
+
+  }
+
+  .fa-door-open{
+    display:block;
+    position:fixed;
+    float:left;
+    color:black;
+    left:0;
+    padding-left:15px;
+    width:40%;
+
+  }
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Màu nền tối */
+    z-index: 999;
+  }
+  
+}
+@media (min-width: 769px) {
+  #sidebar {
+    display: block;
+  }
+}
+
+@keyframes modalFadein {
+  from{
+      opacity:0;
+      transform: translateX(-140px);
+  }
+  to{
+      opacity:1;
+      transform: translateX(0)
+   }
+}
